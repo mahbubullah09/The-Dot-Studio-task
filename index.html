@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            src: url('/Font/gotham/Gotham-Black.otf');
+            src: url('/Font/gotham/Gotham-Bold.otf');
+            src: url('/Font/gotham/Gotham-Light.otf');
+            src: url('/Font/gotham/Gotham-Thin.otf');
+            src: url('/Font/gotham/Gotham-XLight.otf');
+            font-family: 'Gotham';
+        }
+
+        body {
+            font-family: 'Gotham', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    
-    <h3 class=" font-bold"> hello</h3>
-    <div class=" te"></div>
+
+
+
+    <section class="text-center  ">
+        <div class=" max-w-[1070px] mx-auto ">
+
+            <h2 class=" font-semibold  text-[48px] "><span class="text-[#114A8D]">Why</span> Choose Us</h2>
+
+            <div class="my-6 grid grid-cols-2 gap-[48px]">
+
+                <div class="relative">
+                    <img  src="/Assets/banner.jpg" alt="">
+
+                    <div class=" bg-[#114A8DCC] absolute top-1 my-2 py-20  px-[43px]  leading-[35.5px]  w-[511px]   text-center text-white">
+                        <h2 class="text-center     font-bold text-[32px]"><span class="text-[#FFC758]">Empower</span>, Explore, <span class="text-[#FFC758]">Excel </span></h2>
+                        <p class=" text-[20px] font-normal leading-[26px] mt-[8px] ">Experience innovation in education! Our interactive approach, featuring audio/visual
+                            lectures, group discussions, and projects, nurtures critical thinking and creativity</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img  src="/Assets/1.png" alt="">
+
+                    <div class=" absolute bottom-0  w-[511px] bg-gradient-to-t from-[#000000] via-[#00000096] to-[#00000000]   text-center">
+                        <h2 class="text-center text-white  pt-32  items-baseline font-semibold text-[28px]">Striking the <span class="text-[#FFC758] ">Perfect Balance</span></h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
