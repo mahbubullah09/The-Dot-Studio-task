@@ -8,8 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/65fd4e7cff.js" crossorigin="anonymous"></script>
-    
+    <script src="https://kit.fontawesome.com/65fd4e7cff.js" crossorigin="anonymous"></script>
+
     <style>
         @font-face {
             src: url('/Font/gotham/Gotham-Black.otf');
@@ -19,7 +19,7 @@
             src: url('/Font/gotham/Gotham-XLight.otf');
             src: url('/Font/gotham/gotham/Gotham-Bold.otf');
             font-family: 'big';
-            
+
         }
 
         body {
@@ -30,53 +30,54 @@
 
 <body>
 
-
+    <!-- navnar start -->
     <nav>
         <div class=" hidden lg: navbar lg:flex justify-end items-center bg-base-100">
-          <div class="flex-1">
-            <a class=" text-2xl font-bold">The Dot Studio</a>
-          </div>
-          <div class="flex-none">
-            <div>
-              <ul class="menu menu-horizontal px-1 text-lg ">
+            <div class="flex-1">
+                <a class=" text-2xl font-bold">The Dot Studio</a>
+            </div>
+            <div class="flex-none">
+                <div>
+                    <ul class="menu menu-horizontal px-1 text-lg ">
+                        <li><a>Home</a></li>
+                        <li><a>Academic</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+
+                    </ul>
+                </div>
+                <button class=" bg-[#E76F51] rounded px-4 py-2 text-white hover:bg-black ">Login</button>
+            </div>
+        </div>
+
+
+
+        <div class="dropdown dropdown-end dropdown-bottom flex justify-between my-5 lg:hidden">
+
+            <div class="flex items-center pl-4">
+
+                <a class=" text-xl font-bold"> The Dot Studio</a>
+            </div>
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16 " />
+                </svg>
+            </label>
+            <ul tabindex="0" class="menu  dropdown-content z-10 shadow bg-base-100 rounded-box w-52 ms-auto">
                 <li><a>Home</a></li>
                 <li><a>Academic</a></li>
                 <li><a>News</a></li>
                 <li><a>Contact</a></li>
-    
-              </ul>
-            </div>
-            <button class=" bg-[#E76F51] rounded px-4 py-2 text-white hover:bg-black ">Login</button>
-          </div>
+                <button class=" bg-[#E76F51] text-left w-20 rounded px-5 py-2 text-white hover:bg-black ">Login</button>
+
+            </ul>
         </div>
-        
-    
-    
-        <div class="dropdown dropdown-end dropdown-bottom flex justify-between my-5 lg:hidden">
-    
-          <div class="flex items-center pl-4">
-              
-              <a class=" text-xl font-bold"> The Dot Studio</a>
-          </div>
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16 " />
-              </svg>
-          </label>
-          <ul tabindex="0" class="menu  dropdown-content z-10 shadow bg-base-100 rounded-box w-52 ms-auto">
-              <li><a>Home</a></li>
-              <li><a>Academic</a></li>
-              <li><a>News</a></li>
-              <li><a>Contact</a></li>
-              <button class=" bg-[#E76F51] text-left w-20 rounded px-5 py-2 text-white hover:bg-black ">Login</button>
-    
-          </ul>
-      </div>
-      </nav>
+    </nav>
+    <!-- navbar end  -->
 
 
-
+<!-- why choose us section start  -->
     <section class="text-center my-16  ">
         <div class=" max-w-[1070px]  mx-auto ">
 
@@ -92,7 +93,9 @@
                         <h2 class="text-center     font-bold text-base min-[372px]:text-xl md:text-[32px]"><span
                                 class="text-[#FFC758]">Empower</span>,
                             Explore, <span class="text-[#FFC758]">Excel </span></h2>
-                        <p class=" text-sm min-[372px]:text-base md:text-[20px] font-normal leading-[20px] min-[372px]:leading-[26px] mt-[8px] ">Experience innovation
+                        <p
+                            class=" text-sm min-[372px]:text-base md:text-[20px] font-normal leading-[20px] min-[372px]:leading-[26px] mt-[8px] ">
+                            Experience innovation
                             in education!
                             Our interactive approach, featuring audio/visual
                             lectures, group discussions, and projects, nurtures critical thinking and creativity</p>
@@ -139,6 +142,11 @@
                 </div>
             </div>
     </section>
+
+    <!-- why choose us section end  -->
+
+
+    <!-- Our Services Section Start  -->
 
     <section class="text-center  my-16 ">
         <div class=" max-w-[1070px]  mx-auto ">
@@ -294,10 +302,18 @@
     </section>
 
 
+    <!-- Our Services Section end  -->
+
+
+
+
+
+<!-- footer start  -->
+
     <footer class="footer footer-center  bg-[#121212] text-primary-content ">
         <div class="flex pt-20  ">
-             <p class="font-bold text-white text-4xl pb-0">
-               The Dot Studio
+            <p class="font-bold text-white text-4xl pb-0">
+                The Dot Studio
             </p>
         </div>
         <div class="pt-0 pb-0">
@@ -324,6 +340,7 @@
             </div>
         </div>
     </footer>
+    <!-- footer end  -->
 </body>
 
 </html>
