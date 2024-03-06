@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/65fd4e7cff.js" crossorigin="anonymous"></script>
+    
     <style>
         @font-face {
             src: url('/Font/gotham/Gotham-Black.otf');
@@ -13,7 +17,9 @@
             src: url('/Font/gotham/Gotham-Light.otf');
             src: url('/Font/gotham/Gotham-Thin.otf');
             src: url('/Font/gotham/Gotham-XLight.otf');
-            font-family: 'Gotham';
+            src: url('/Font/gotham/gotham/Gotham-Bold.otf');
+            font-family: 'big';
+            
         }
 
         body {
@@ -25,11 +31,56 @@
 <body>
 
 
+    <nav>
+        <div class=" hidden lg: navbar lg:flex justify-end items-center bg-base-100">
+          <div class="flex-1">
+            <a class=" text-2xl font-bold">The Dot Studio</a>
+          </div>
+          <div class="flex-none">
+            <div>
+              <ul class="menu menu-horizontal px-1 text-lg ">
+                <li><a>Home</a></li>
+                <li><a>Academic</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+    
+              </ul>
+            </div>
+            <button class=" bg-[#E76F51] rounded px-4 py-2 text-white hover:bg-black ">Login</button>
+          </div>
+        </div>
+        
+    
+    
+        <div class="dropdown dropdown-end dropdown-bottom flex justify-between my-5 lg:hidden">
+    
+          <div class="flex items-center pl-4">
+              
+              <a class=" text-xl font-bold"> The Dot Studio</a>
+          </div>
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16 " />
+              </svg>
+          </label>
+          <ul tabindex="0" class="menu  dropdown-content z-10 shadow bg-base-100 rounded-box w-52 ms-auto">
+              <li><a>Home</a></li>
+              <li><a>Academic</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+              <button class=" bg-[#E76F51] text-left w-20 rounded px-5 py-2 text-white hover:bg-black ">Login</button>
+    
+          </ul>
+      </div>
+      </nav>
+
+
 
     <section class="text-center my-16  ">
         <div class=" max-w-[1070px]  mx-auto ">
 
-            <h2 class=" font-semibold  text-[48px] "><span class="text-[#114A8D]">Why</span> Choose Us</h2>
+            <h2 class=" font-semibold  text-4xl md:text-[48px] "><span class="text-[#114A8D]">Why</span> Choose Us</h2>
 
             <div class="my-6 grid grid-cols-1 lg:grid-cols-2 gap-[48px]">
 
@@ -37,11 +88,11 @@
                     <img class="rounded-md" src="/Assets/banner.jpg" alt="">
 
                     <div
-                        class=" bg-[#114A8DCC] absolute top-1 my-2 py-7 md:py-[182px] lg:py-[85px]  px-[43px]  leading-[35.5px]  w-full    text-center text-white">
-                        <h2 class="text-center     font-bold text-2xl md:text-[32px]"><span
+                        class=" bg-[#114A8DCC] absolute top-1 lg:top-3 my-2 py-5 min-[372px]:py-8 min-[420px]:py-12 min-[500px]:py-[140px] min-[700px]:py-[182px] min-[1000px]:py-[80px] min-[1040px]:py-1000px  px-[43px]  leading-[35.5px]  w-full    text-center text-white">
+                        <h2 class="text-center     font-bold text-base min-[372px]:text-xl md:text-[32px]"><span
                                 class="text-[#FFC758]">Empower</span>,
                             Explore, <span class="text-[#FFC758]">Excel </span></h2>
-                        <p class=" text-base md:text-[20px] font-normal leading-[26px] mt-[8px] ">Experience innovation
+                        <p class=" text-sm min-[372px]:text-base md:text-[20px] font-normal leading-[20px] min-[372px]:leading-[26px] mt-[8px] ">Experience innovation
                             in education!
                             Our interactive approach, featuring audio/visual
                             lectures, group discussions, and projects, nurtures critical thinking and creativity</p>
@@ -89,7 +140,7 @@
             </div>
     </section>
 
-    <section class="text-center  ">
+    <section class="text-center  my-16 ">
         <div class=" max-w-[1070px]  mx-auto ">
 
             <h2 class=" font-semibold  text-[48px] "> Our <span class="text-[#114A8D]">Services</span></h2>
@@ -108,7 +159,7 @@
                         <div
                             class=" absolute bottom-0  w-full rounded-b-md  bg-gradient-to-t from-[#000000] via-[#00000096] to-[#00000000]   text-center">
                             <h2
-                                class="text-center text-white group-hover:opacity-0   pt-[120px] pb-2 items-baseline text-3xl font-bold">
+                                class="text-center text-white group-hover:opacity-0   pt-[120px] pb-2 items-baseline text-2xl font-bold">
                                 Holistic
                                 <span class="text-[#FF4B73]  ">Development</span>
                             </h2>
@@ -140,7 +191,7 @@
                         <div
                             class=" absolute bottom-0  w-full rounded-b-md  bg-gradient-to-t from-[#000000] via-[#00000096] to-[#00000000]   text-center">
                             <h2
-                                class="text-center text-white group-hover:opacity-0   pt-[120px] pb-2 items-baseline text-3xl font-bold">
+                                class="text-center text-white group-hover:opacity-0   pt-[120px] pb-2 items-baseline text-2xl font-bold">
 
                                 <span class="text-[#FF4B73]  ">Proven</span> and <span
                                     class="text-[#FF4B73]  ">Tested</span> Centralized Curriculum
@@ -178,7 +229,7 @@
                         <div
                             class=" absolute bottom-0  w-full rounded-b-md  bg-gradient-to-t from-[#000000] via-[#00000096] to-[#00000000]   text-center">
                             <h2
-                                class="text-center text-white group-hover:opacity-0   pt-[120px] pb-2 items-baseline text-3xl font-bold">
+                                class="text-center text-white group-hover:opacity-0   pt-[120px] pb-2 items-baseline text-2xl font-bold">
 
                                 <span class="text-[#FF4B73]  ">Proven</span> and <span
                                     class="text-[#FF4B73]  ">Innovative</span> Challenging Methodologies
@@ -212,7 +263,7 @@
                         <div
                             class=" absolute bottom-0  w-full rounded-b-md  bg-gradient-to-t from-[#000000] via-[#00000096] to-[#00000000]   text-center">
                             <h2
-                                class="text-center text-white group-hover:opacity-0   pt-[120px] pb-2 items-baseline text-3xl font-bold">
+                                class="text-center text-white group-hover:opacity-0   pt-[120px] pb-2 items-baseline text-2xl font-bold">
 
                                 <span class="text-[#FF4B73]  ">Enrichment</span> Program
                             </h2>
@@ -241,6 +292,38 @@
         </div>
 
     </section>
+
+
+    <footer class="footer footer-center  bg-[#121212] text-primary-content ">
+        <div class="flex pt-20  ">
+             <p class="font-bold text-white text-4xl pb-0">
+               The Dot Studio
+            </p>
+        </div>
+        <div class="pt-0 pb-0">
+            <ul tabindex="0" class="text-white gap-8  flex flex-wrap justify-center  md:grid-cols-6 gap-5     ">
+                <li><a class="cursor-pointer">Home</a></li>
+                <li><a class="cursor-pointer">About Us</a></li>
+                <li><a class="cursor-pointer">Academic</a></li>
+                <li><a class="cursor-pointer">Carear</a></li>
+                <li><a class="cursor-pointer">Support</a></li>
+                <li><a class="cursor-pointer">My Account</a></li>
+
+            </ul>
+        </div>
+        <div>
+            <div class=" text-white pb-10 text-3xl flex flex-wrap justify-center gap-6 md:grid-cols-6   ">
+                <i class="fa-brands fa-twitter cursor-pointer" style="color: #058ce1;"></i>
+
+                <i class="fa-brands fa-facebook cursor-pointer" style="color: #097efb;"></i>
+
+                <i class="fa-brands fa-youtube cursor-pointer" style="color: #d72323;"></i>
+                <i class="fa-brands fa-linkedin cursor-pointer"></i>
+                <i class="fa-brands fa-instagram cursor-pointer"></i>
+                <i class="fa-brands fa-apple cursor-pointer"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
